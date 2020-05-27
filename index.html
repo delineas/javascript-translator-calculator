@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Translator Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="py-5">
+        <h4 class="mb-4">Calculadora de traducciones</h4>
+
+        <div class="mb-4">
+          <label for="words">Número de palabras</label>
+          <input type="number" class="form-control" id="words" placeholder="0" value="0" required>
+          <div class="invalid-feedback">
+            Por favor, complete este campo.
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <label for="language">Traducir del castellano a...</label>
+          <select class="custom-select d-block w-100" id="language" required>
+            <option value="">Elige uno</option>
+            <option value="en">Inglés</option>
+            <option value="fr">Francés</option>
+            <option value="hy">Armenio</option>
+          </select>
+          <div class="invalid-feedback">
+            Debe seleccionar el idioma de destino
+          </div>
+        </div>
+
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="sprint">
+          <label class="custom-control-label" for="sprint">Entrega rápida</label>
+        </div>
+        <hr class="mb-4">
+
+        <div class="my-5">
+          <!--<h3>Precio: <span id="js-total">0</span>€-->
+          <h3>Precio: <span id="js-total">0</span>€
+        </div>
+
+        <div class="my-5">
+          <button class="btn btn-primary">Imprimir</button>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <!-- <script src="js/scripts.js"></script> -->
+    <!-- Solucion mas evolucionada -->
+    <script src="js/scripts-refactor.js"></script>
+  </body>
+
+</html>
